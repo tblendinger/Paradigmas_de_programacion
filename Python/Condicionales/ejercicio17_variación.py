@@ -1,19 +1,23 @@
-n = int(input("Ingrese un número "))
+#tratamiento de excepciones tryexcept
+#while para error de numero negativo
 
-while n < 0:
-    print("Error")
-    n = int(input("Ingrese un número positivo "))
+try:
+    n = int(input("Ingrese un número "))
 
-if n < 100:
-    if n < 10:
+    while n < 0:
+        print("Error")
+        n = int(input("Ingrese un número positivo "))
+
+    if n < 100:
+        if n < 10:
            print("El numero tiene 1 cifra")
-    else:
+        else:
            print("El numero tiene 2 cifras")
-else:
-    if n < 1000:
+    else:
+        if n < 1000:
             print("El número tiene 3 cifras")
-    else: 
+        else: 
             print("Error, el número tiene más de 3 cifras")
             
-            
-#tratamiento de excepciones tryexcept
+except ValueError:
+    print("Ingrese un valor numérico")
