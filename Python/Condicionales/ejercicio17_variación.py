@@ -14,3 +14,6 @@ else:
             print("El número tiene 3 cifras")
     else: 
             print("Error, el número tiene más de 3 cifras")
+            
+            
+#tratamiento de excepciones tryexcept
