@@ -6,12 +6,12 @@
 
 n = int(input("Ingrese la cantidad de piezas del lote: ")) 
 
+perfiles_aptos = 0
 for i in range (1 , n+1):
-    longitud = int(input("Ingrese la longitud de cada perfil: ")) 
+    longitud = int(input(f"Ingrese la longitud del perfil {i}: ")) 
     
-if  m <= 130 and m >= 120:
-    m = 
-else: 
-      
+    if  longitud <= 130 and  longitud >= 120:
+        perfiles_aptos += 1
 
-print("Hay ",  , "piezas aptas en el lote")
+
+print("Hay ", perfiles_aptos  , "piezas aptas en el lote")
