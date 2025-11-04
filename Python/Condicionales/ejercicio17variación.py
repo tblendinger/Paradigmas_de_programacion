@@ -20,4 +20,4 @@ try:
             print("Error, el número tiene más de 3 cifras")
             
 except ValueError:
-    n = int(input("Ingrese un caracter válido "))
+    n = int(input("Ingrese un caracter válido "))                           
